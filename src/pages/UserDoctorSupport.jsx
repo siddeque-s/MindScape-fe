@@ -18,7 +18,7 @@ const UserDoctorSupport = () => {
   };
 
   const styleDoctorSupportPArent = () => {
-    return "min-h-screen bg-gradient-to-b from-emerald-50 via-white to-emerald-100 px-6 py-10 mt-13";
+    return "min-h-screen bg-gradient-to-b from-emerald-100 via-white to-emerald-100 px-6 py-10 mt-13";
   };
 
   return (

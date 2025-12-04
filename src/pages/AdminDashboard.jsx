@@ -29,7 +29,7 @@ const AdminDashboard = () => {
     { name: "Depression", count: 15 },
   ];
   const styleAdminDash=()=>{
-return "min-h-screen mt-13 bg-gradient-to-b from-emerald-50 via-white to-emerald-100 px-6 py-10"
+return "min-h-screen mt-13 bg-gradient-to-b from-emerald-200 via-white to-emerald-100 px-6 py-10"
   }
   return (
     <>

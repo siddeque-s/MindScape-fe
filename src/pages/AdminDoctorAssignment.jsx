@@ -11,7 +11,7 @@ const AdminDoctorAssignment = () => {
         <AdminHeader/>
       </div>
 
-    <div className="min-h-screen mt-13 bg-emerald-50 px-6 py-10">
+    <div className="min-h-screen mt-13 bg-emerald-100 px-6 py-10">
       <h1 className="text-3xl font-bold text-center text-emerald-900 mb-8">
         Doctor Requests & Assignment
       </h1>

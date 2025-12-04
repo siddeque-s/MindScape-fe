@@ -33,7 +33,7 @@ const DoctorAssignedPatientDetails = () => {
   const tabs = ["overview", "journals", "notes", "habits", "chat"];
   const [activeTab, setActiveTab] = useState("overview");
   const styleDoctorAssignedPatientsdet = () => {
-    return "min-h-screen mt-13 px-6 py-10 bg-gradient-to-b from-emerald-50 via-white to-emerald-100";
+    return "min-h-screen mt-13 px-6 py-10 bg-gradient-to-b from-emerald-100 via-white to-emerald-100";
   };
   return (
     <>

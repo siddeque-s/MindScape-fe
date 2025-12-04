@@ -4,7 +4,7 @@ import UserHeader from "../components/UserHeader";
 
 const Journal = () => {
   const styleSection1 = () => {
-    return "px-6 py-16 bg-gradient-to-b from-emerald-100 to-white";
+    return "px-6 py-16 bg-gradient-to-b from-emerald-200 to-emerald-50";
   };
   const styleSection2 = () => {
     return "px-6 py-16 bg-gradient-to-b from-white to-emerald-100";

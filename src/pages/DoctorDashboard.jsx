@@ -3,7 +3,7 @@ import DoctorHeader from '../components/DoctorHeader'
 
 const DoctorDashboard = () => {
     const styleDoctorDash = () => {
-        return "min-h-screen px-6 py-10 mt-13 bg-gradient-to-b from-emerald-50 via-white to-emerald-100"
+        return "min-h-screen px-6 py-10 mt-13 bg-gradient-to-b from-emerald-100 via-white to-emerald-100"
     }
 
     return (

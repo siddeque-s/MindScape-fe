@@ -102,7 +102,7 @@ const Insights = () => {
 
   const colors = ["#059669", "#ef4444"];
   const sec1InsightsStyle = () => {
-    return "mt-13 min-h-screen bg-gradient-to-b from-emerald-50 via-white to-emerald-100 px-6 py-10";
+    return "mt-13 min-h-screen bg-gradient-to-b from-emerald-100 via-white to-emerald-100 px-6 py-10";
   };
 
   return (

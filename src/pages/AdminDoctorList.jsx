@@ -3,7 +3,7 @@ import AdminHeader from "../components/AdminHeader";
 
 const AdminDoctorList = () => {
   const styleParent = () => {
-    return "min-h-screen mt-13 bg-gradient-to-b from-white via-emerald-50 to-white px-6 py-10";
+    return "min-h-screen mt-13 bg-gradient-to-b from-white via-emerald-200 to-emerald-50 px-6 py-10";
   };
   return (
     <>

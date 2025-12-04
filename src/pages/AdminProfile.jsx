@@ -3,7 +3,7 @@ import AdminHeader from '../components/AdminHeader'
 
 const AdminProfile = () => {
     const sec1Style = () => {
-    return "min-h-screen bg-gradient-to-b from-emerald-50 via-white to-emerald-100 mt-13 px-6 py-10";
+    return "min-h-screen bg-gradient-to-b from-emerald-100 via-white to-emerald-100 mt-13 px-6 py-10";
   };
   return (
     <>

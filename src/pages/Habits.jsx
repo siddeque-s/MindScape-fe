@@ -4,7 +4,7 @@ import UserHeader from "../components/UserHeader";
 
 const Habits = () => {
   const sec1HabitsStyle = () => {
-    return "min-h-screen mt-13 px-6 py-10 bg-gradient-to-b from-white via-emerald-50 to-emerald-100";
+    return "min-h-screen mt-13 px-6 py-10 bg-gradient-to-b from-white via-emerald-100 to-emerald-200";
   };
   return (
     <>

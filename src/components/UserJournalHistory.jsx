@@ -12,8 +12,7 @@ const UserJournalHistory = () => {
      
 
         <div className="max-w-4xl mx-auto">
-          <p className="text-gray-600 text-center">No journal entries yet.</p>
-
+       
           <div>
             <div
               className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl

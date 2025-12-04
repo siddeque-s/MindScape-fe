@@ -41,13 +41,16 @@ function App() {
           path="/assignedPatientDetails"
           element={<DoctorAssignedPatientDetails />}
         />
-        <Route path="/doctorProfile" element={<DoctorProfile/>} />
+        <Route path="/doctorProfile" element={<DoctorProfile />} />
         {/* admin */}
         <Route path="/adminDash" element={<AdminDashboard />} />
         <Route path="/adminUserManagement" element={<AdminUserManagement />} />
-        <Route path="/adminDoctorList" element={<AdminDoctorList/>} />
-        <Route path="/adminDoctorAssignment" element={<AdminDoctorAssignment/>} />
-        <Route path="/adminProfile" element={<AdminProfile/>} />
+        <Route path="/adminDoctorList" element={<AdminDoctorList />} />
+        <Route
+          path="/adminDoctorAssignment"
+          element={<AdminDoctorAssignment />}
+        />
+        <Route path="/adminProfile" element={<AdminProfile />} />
       </Routes>
     </>
   );

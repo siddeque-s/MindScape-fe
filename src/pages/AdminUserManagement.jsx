@@ -5,7 +5,7 @@ import AdminHeader from "../components/AdminHeader";
 const AdminUserManagement = () => {
 
   const parentStyle = () => {
-    return "min-h-screen mt-13 bg-gradient-to-b from-emerald-50 to-white px-6 py-10";
+    return "min-h-screen mt-13 bg-gradient-to-b from-emerald-100 via-white to-emerald-200 px-6 py-10";
   };
 
   return (

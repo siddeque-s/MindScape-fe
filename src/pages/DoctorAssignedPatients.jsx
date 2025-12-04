@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const DoctorAssignedPatients = () => {
   const sec1ParentStyle = () => {
-    return "min-h-screen px-6 py-10 bg-gradient-to-b mt-13 from-emerald-50 via-white to-emerald-100";
+    return "min-h-screen px-6 py-10 bg-gradient-to-b mt-13 from-emerald-100 via-white to-emerald-100";
   };
 
   return (

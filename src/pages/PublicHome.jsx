@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logoNew.png";
 import { Carousel } from "flowbite-react";
+import CoomonUser from "../components/CoomonUser";
 
 const PublicHome = () => {
   const eachCaorsel=()=>{
@@ -8,11 +9,14 @@ const PublicHome = () => {
   }
   return (
     <>
+<div className="fixed top-0 left-0 w-full z-50">
+  <CoomonUser/>
+</div>
 
       {/*sec1 homefirst */}
       <section
         id="home"
-        className="bg-cover h-[90vh] bg-center flex items-center justify-center px-6 relative"
+        className="bg-cover h-[90vh] bg-center flex items-center justify-center px-6 relative mt-10"
         style={{
           backgroundImage:
             "url('https://res.cloudinary.com/sharecare/image/upload/f_auto/v1493136385/slideshows/stress-relief-tricks-er-doctor-01')",
@@ -53,7 +57,7 @@ const PublicHome = () => {
 
 
       {/*sec2 abt stress*/}
-      <section className="bg-green-50 py-20 px-6">
+      <section id="stress" className="bg-green-50 py-20 px-6">
         <div className="max-w-6xl mx-auto">
 
           <h1 className="text-4xl font-bold text-emerald-900 text-center mb-10 flex items-center justify-center gap-3">

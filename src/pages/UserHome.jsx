@@ -19,6 +19,7 @@ import { faBolt, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 import { TiTick } from "react-icons/ti";
 import { RiPlantFill } from "react-icons/ri";
+import UserHeader from "../components/UserHeader";
 
 const UserHome = () => {
   const moodData = [
@@ -47,7 +48,15 @@ const UserHome = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+
+    <>
+
+
+    <div className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+    <UserHeader/>
+    </div>
+    
+    <div className="min-h-screen mt-10 bg-white">
       {/* sec1 top */}
       <section className="px-6 py-16 text-center bg-[#F1F9F1] shadow-inner">
         <div className="flex justify-center mb-5">
@@ -223,6 +232,8 @@ const UserHome = () => {
         </div>
       </section>
     </div>
+    </>
+    
   );
 };
 

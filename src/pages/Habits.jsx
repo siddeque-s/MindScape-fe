@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import UserHabitsHistory from "../components/UserHabitsHistory";
+import UserHeader from "../components/UserHeader";
 
 const Habits = () => {
   const sec1HabitsStyle = () => {
-    return "min-h-screen px-6 py-10 bg-gradient-to-b from-white via-emerald-50 to-emerald-100";
+    return "min-h-screen mt-13 px-6 py-10 bg-gradient-to-b from-white via-emerald-50 to-emerald-100";
   };
   return (
     <>
+     <div className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+        <UserHeader />
+      </div>
       <div className={sec1HabitsStyle()}>
         <h1 className="text-4xl font-bold text-emerald-900 text-center mb-10">
           Habit Builder{" "}
@@ -38,7 +43,6 @@ const Habits = () => {
           </div>
         </section>
 
-        {/* sec2 add hoctor habits */}
         <section className="max-w-5xl mx-auto mb-12">
           <h2 className="text-3xl font-bold text-teal-900 mb-6 flex items-center gap-2">
             <img
@@ -47,64 +51,62 @@ const Habits = () => {
             />
             Habits Assigned by Your Doctor
           </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* map doctporhabits */}
-            <div
-              className="bg-teal-50 p-6 rounded-2xl shadow-md hover:shadow-xl 
+          
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* map doctporhabits */}
+        <div
+          className="bg-teal-50 p-6 rounded-2xl shadow-md hover:shadow-xl 
                          hover:scale-[1.04] transition-all border border-teal-200"
-            >
-              <div className="flex items-center gap-4">
-                <div>
-                  <h3 className="text-xl font-semibold text-teal-900">
-                    Walking
-                  </h3>
-                  <p className="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded-full inline-block mt-1">
-                    Assigned by Doctor
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-5">
-                <div className="flex justify-between text-sm text-gray-600 mb-1">
-                  <span>Progress</span>
-                  <span>10%</span>
-                </div>
-
-                <div className="w-full bg-gray-200 h-3 rounded-full overflow-hidden">
-                  <div
-                    className="bg-teal-600 h-3 rounded-full transition-all"
-                    style={{ width: `10%` }}
-                  ></div>
-                </div>
-              </div>
-
-              <div className="mt-6 flex justify-between">
-                <button
-                  className="px-4 py-2 bg-teal-300 text-teal-900 rounded-lg 
-                             hover:bg-teal-400 transition"
-                >
-                  + Progress
-                </button>
-
-                <button
-                  disabled
-                  className="px-4 py-2 bg-gray-300 text-gray-500 rounded-lg cursor-not-allowed"
-                >
-                  Doctor Only
-                </button>
-              </div>
+        >
+          <div className="flex items-center gap-4">
+            <div>
+              <h3 className="text-xl font-semibold text-teal-900">Walking</h3>
+              <p className="text-xs bg-teal-200 text-teal-800 px-2 py-1 rounded-full inline-block mt-1">
+                Assigned by Doctor
+              </p>
             </div>
           </div>
+
+          <div className="mt-5">
+            <div className="flex justify-between text-sm text-gray-600 mb-1">
+              <span>Progress</span>
+              <span>10%</span>
+            </div>
+
+            <div className="w-full bg-gray-200 h-3 rounded-full overflow-hidden">
+              <div
+                className="bg-teal-600 h-3 rounded-full transition-all"
+                style={{ width: `10%` }}
+              ></div>
+            </div>
+             <div className="mt-6 flex justify-between">
+            <button
+              className="px-4 py-2 bg-teal-300 text-teal-900 rounded-lg 
+                             hover:bg-teal-400 transition"
+            >
+              + Progress
+            </button>
+
+            <button
+              disabled
+              className="px-4 py-2 bg-gray-300 text-gray-500 rounded-lg cursor-not-allowed"
+            >
+              Doctor Only
+            </button>
+          </div>
+          </div>
+        </div>
+      </div>
+
+
+         
         </section>
 
-        {/* sec3 user habits */}
         <section className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-emerald-900 mb-6">
             Your Habits
           </h2>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* map user habits */}
             <div
               className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl 
@@ -128,25 +130,29 @@ const Habits = () => {
                     style={{ width: `10%` }}
                   ></div>
                 </div>
-              </div>
-
-              <div className="mt-6 flex justify-between">
-                <button
-                  className="px-4 py-2 bg-green-200 text-emerald-800 rounded-lg 
+                 <div className="mt-6 flex justify-between">
+            <button
+              className="px-4 py-2 bg-green-200 text-emerald-800 rounded-lg 
                              hover:bg-green-300 transition"
-                >
-                  + Progress
-                </button>
+            >
+              + Progress
+            </button>
 
-                <button
-                  className="px-4 py-2 bg-red-200 text-red-700 rounded-lg 
+            <button
+              className="px-4 py-2 bg-red-200 text-red-700 rounded-lg 
                              hover:bg-red-300 transition"
-                >
-                  Delete
-                </button>
+            >
+              Delete
+            </button>
+          </div>
               </div>
+
+             
             </div>
           </div>
+
+
+         
         </section>
       </div>
     </>

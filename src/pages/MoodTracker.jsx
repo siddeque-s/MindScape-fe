@@ -1,4 +1,6 @@
 import React from "react";
+import UserMoodHistory from "../components/UserMoodHistory";
+import UserHeader from "../components/UserHeader";
 
 const MoodTracker = () => {
   const moods = [
@@ -10,10 +12,15 @@ const MoodTracker = () => {
   ];
 
   const sec1MoodTrackerStyle = () => {
-    return "min-h-screen bg-gradient-to-b from-emerald-100 via-white to-emerald-200 px-6 py-10";
+    return "min-h-screen bg-gradient-to-b mt-10 from-emerald-100 via-white to-emerald-200 px-6 py-10";
   };
 
   return (
+
+    <>
+     <div className="fixed top-0 left-0 w-full bg-white shadow-lg z-50">
+        <UserHeader />
+      </div>
     <div className={sec1MoodTrackerStyle()}>
       <h1 className="text-4xl font-bold text-emerald-900 text-center mb-10">
         Mood Tracker <span className="text-3xl">🧠</span>
@@ -73,24 +80,10 @@ const MoodTracker = () => {
       </section>
 
       {/* sect 2 mood History */}
-      <section className="max-w-4xl mx-auto">
-        <h2 className="text-2xl font-bold text-emerald-900 mb-6">
-          Your Recent Mood History
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* map history */}
-          <div
-            className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl hover:scale-105 
-              transition-all text-center"
-          >
-            <span className="text-5xl">😄</span>
-            <h3 className="font-semibold text-emerald-800 mt-3">Monday</h3>
-            <p className="text-gray-600">Happy</p>
-          </div>
-        </div>
-      </section>
+      <UserMoodHistory/>
     </div>
+    </>
+    
   );
 };
 
